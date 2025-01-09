@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Improve text readability */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-purple-300 to-blue-300 text-transparent bg-clip-text;
+}
+
+/* Smooth section transitions */
+section {
+  @apply relative z-10;
+}
